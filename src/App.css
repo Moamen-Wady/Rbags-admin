@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap");
+
+@media only screen and (max-width: 499px) {
+  body .loginBox{
+    width: 90% !important;
+  }
+  body h1 {
+    font-size: 40px !important;
+  }
+  body .table th,
+  body .table td {
+    font-size: 13px;
+    padding: 6px;
+  }
+  body .checker {
+    width: 25px !important;
+  }
+  body td svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+  }
+  body .table table {
+    width: 97% !important;
+    margin: auto;
+  }
+  body .table {
+    width: 97% !important;
+    margin: 0 auto 22px auto !important;
+  }
+  body button {
+    font-size: 16px !important;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff4d;
+  background-image: url("/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+* {
+  box-sizing: border-box;
+}
+.table th,
+.table td {
+  font-size: 17.5px;
+  padding: 8px;
+  font-family: "El Messiri", sans-serif;
+  text-align: center;
+  max-width: fit-content !important;
+}
+.checker {
+  width: 42px !important;
+}
+.table table {
+  width: 95% !important;
+  margin: auto;
+}
+.table {
+  width: 95% !important;
+  margin: 0 auto 32px auto !important;
+}
+button {
+  font-size: 17.5px !important;
+  font-family: "El Messiri", sans-serif;
+  text-align: center;
+}
+.butCont {
+  margin-left: 2.5%;
+  width: fit-content;
+}
+.butContButton {
+  margin-right: 16px !important;
+}
+.loginBox{
+  width: fit-content !important;
+}
