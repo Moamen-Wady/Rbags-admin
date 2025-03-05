@@ -1,6 +1,4 @@
-import { memo } from "react";
-
-export default memo(function Loading() {
+export default function Loading() {
   return (
     <div
       style={{
@@ -17,4 +15,4 @@ export default memo(function Loading() {
       />
     </div>
   );
-});
+}

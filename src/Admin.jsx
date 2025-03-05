@@ -30,7 +30,7 @@ export default memo(function Admin({ notify }) {
     setIsDisabled(state);
   };
 
-  const LoginBox = memo(({ notify }) => {
+  const LoginBox = memo(function LoginBox({ notify }) {
     const [password, setPassword] = useState("");
 
     const handleLogin = () => {
@@ -46,7 +46,7 @@ export default memo(function Admin({ notify }) {
             notify("error", "Wrong Password");
           }
         })
-        .catch((err) => {
+        .catch(() => {
           notify("error", "Network Error");
         })
         .finally(() => {
@@ -99,7 +99,7 @@ export default memo(function Admin({ notify }) {
     );
   });
 
-  const TableEdit = memo(({ notify }) => {
+  const TableEdit = memo(function TableEdit({ notify }) {
     const [selected, setSelected] = useState([]);
     const [open, setOpen] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
@@ -415,5 +415,7 @@ export default memo(function Admin({ notify }) {
       </>
     );
   });
-  return <>{user ? <TableEdit notify={notify}/> : <LoginBox notify={notify}/>}</>;
+  return (
+    <>{user ? <TableEdit notify={notify} /> : <LoginBox notify={notify} />}</>
+  );
 });
